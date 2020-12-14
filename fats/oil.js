@@ -11,9 +11,9 @@ function oilFromCupsToOthers(cup){
         cups.value = "";
         return;
     }
-    grams.value = Math.round(cup * 200);
+    grams.value = Math.round(cup * 213);
     tablespoons.value = roundTo((cup * 16), 2);
-    ounces.value= roundTo(cup * 7.093594, 2);
+    ounces.value= roundTo(cup * 7.5109, 2);
 }
 
 function oilFromTbspnsToOthers(tbspn){
@@ -23,9 +23,9 @@ function oilFromTbspnsToOthers(tbspn){
         tablespoons.value = "";
         return;
     }
-    grams.value = Math.round(tbspn * 12.56875);
+    grams.value = Math.round(tbspn * 13.308);
     cups.value = roundTo((tbspn * (1/16)), 2);
-    ounces.value= roundTo(tbspn * 0.44335, 2);
+    ounces.value= roundTo(tbspn * 0.46943, 2);
 }
 
 function oilFromGramsToOthers(gram){
@@ -35,9 +35,9 @@ function oilFromGramsToOthers(gram){
         grams.value = "";
         return;
     }
-    tablespoons.value = roundTo((gram * 0.079562),2);
-    cups.value = roundTo((gram * 0.004973), 2);
-    ounces.value=roundTo(gram * 0.035274, 2);
+    tablespoons.value = roundTo((gram * 0.075987),2);
+    cups.value = roundTo((gram * 0.004749), 2);
+    ounces.value=roundTo(gram * 0.035269, 2);
 }
 
 
@@ -48,9 +48,9 @@ function oilFromOuncesToOthers(ounce){
         ounces.value = "";
         return;
     }
-    tablespoons.value = roundTo((ounce * 2.255556),2);
-    cups.value = roundTo((ounce * 0.140972), 2);
-    grams.value= Math.round(ounce * 28.3495);
+    tablespoons.value = roundTo((ounce * 2.08),2);
+    cups.value = roundTo((ounce * 0.134636), 2);
+    grams.value= Math.round(ounce * 28.349);
 }
 
 function roundTo(n, digits) {

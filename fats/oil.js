@@ -1,10 +1,10 @@
 var cups = document.getElementById("cup");
-var tablespoons = document.getElementById("tbspn");
+var tablespoons = document.getElementById("tablespoon");
 var grams = document.getElementById("gram");
 var ounces = document.getElementById("ounce");
 
 
-function whiteFromCupsToOthers(cup){
+function oilFromCupsToOthers(cup){
     cup = parseFloat(cup);
     if (cup<0){
         alert("Value cannot be negative!");
@@ -16,7 +16,7 @@ function whiteFromCupsToOthers(cup){
     ounces.value= roundTo(cup * 7.093594, 2);
 }
 
-function whiteFromTbspnsToOthers(tbspn){
+function oilFromTbspnsToOthers(tbspn){
     tbspn = parseFloat(tbspn);
     if (tbspn<0){
         alert("Value cannot be negative!");
@@ -28,7 +28,7 @@ function whiteFromTbspnsToOthers(tbspn){
     ounces.value= roundTo(tbspn * 0.44335, 2);
 }
 
-function whiteFromGramsToOthers(gram){
+function oilFromGramsToOthers(gram){
     gram = parseFloat(gram);
     if (gram<0){
         alert("Value cannot be negative!");
@@ -36,12 +36,12 @@ function whiteFromGramsToOthers(gram){
         return;
     }
     tablespoons.value = roundTo((gram * 0.079562),2);
-    cups.value = roundTo((gram * 0.005), 2);
+    cups.value = roundTo((gram * 0.004973), 2);
     ounces.value=roundTo(gram * 0.035274, 2);
 }
 
 
-function whiteFromOuncesToOthers(ounce){
+function oilFromOuncesToOthers(ounce){
      ounce = parseFloat(ounce);
     if (ounce<0){
         alert("Value cannot be negative!");

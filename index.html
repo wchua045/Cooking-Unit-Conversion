@@ -3,11 +3,11 @@
 <title>Unit Converter - Circle</title>
 
 <head>
-    <link rel="icon" href="../../image/calculator_icon.png">
-    <link rel="stylesheet" href="../../style/index.css">
+    <link rel="stylesheet" href="style.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -34,34 +34,32 @@
     </head>
     
     <body>
-        <h1 class="display-1 text-center">Cooking Unit Conversion
-                Calculator</a> <i class="fa fa-heart"></i></h1>
-        <h2 class="text-center display-2">Cooking Units Conversion</h2>
-        <p class="lead">
+        <div class = "divTop" style="background-image: url('images/headerbg.jpg');">
+        <h1 class= "text-center text-white text-uppercase header-text"><a href="#" class="text-light">Cooking Unit Conversion Calculator</a></h1>
+        </div>
+        <p class="lead about-para text-center font-italic">
         Volume and weight conversions are an important resource to have in the kitchen. When halving or doubling a recipe,
         making the correct conversions can make or break your final results.
         </p>
-
-        <p class="about-para">
-        <h3 class="text-center text-brown">Enter value in any input field to determine values in other units</h3>
-        </p>
+        <h3 class="lead about-para text-center font-italic">Our conversion is accurate to the type of ingredients.</h3>
+        <br>
+        <h3 class="lead about-para text-center font-weight-bold">- - - Start by selecting the ingredients that you want to convert - - -</h3>
         <div class="container jumbotron">
-            <div class="container-fluid">
-        
+            <div class="container-fluid"></div>
                 <div class="row">
                     <!--menu for flour: bread, all-purpose <3-->
                     <div class="dropdown-container text-center">
                         <div class="dropdown">
-                            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Flour</a>
+                            <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Flour <img src="/images/flour.png" width=25px height=25px alt="flour"></a>
         
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
         
         
         
         
-                                <a class="dropdown-item" href="../ingredients/breadflour.html">Bread Flour</a>
-                                <a class="dropdown-item" href="../ingredients/apflour.html">All-purpose Flour</a>
+                                <a class="dropdown-item" href="/flour/breadflour.html">Bread Flour</a>
+                                <a class="dropdown-item" href="/flour/apflour.html">All-purpose Flour</a>
         
                             </div>
                         </div>
@@ -71,114 +69,67 @@
                     <!--menu for sugar: white granulated, brown(packed) <3-->
                     <div class="dropdown-container text-center">
                         <div class="dropdown">
-                            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sugar</a>
+                            <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sugar <img src="/images/sugar.png" width=25px height=25px alt="sugar"></a>
         
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="../sugar/whitesugar.html">White Granulated Sugar</a>
-                                <a class="dropdown-item" href="../sugar/brownsugar.html">Brown Sugar(Packed)</a>
+                                <a class="dropdown-item" href="/sugar/whitesugar.html">White Granulated Sugar</a>
+                                <a class="dropdown-item" href="/sugar/brownsugar.html">Brown Sugar(Packed)</a>
         
                             </div>
                         </div>
                     </div>
-        
+                    <!--menu for fats: butter, oil <3-->
                     <div class="dropdown-container text-center">
                         <div class="dropdown">
-                            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Chemistry
+                                Fats <img src="/images/butter.png" width=25px height=25px alt="fats"> </a>
+        
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="/sugar/whitesugar.html">Butter</a>
+                                <a class="dropdown-item" href="/sugar/brownsugar.html">Oil</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+        
+        
+                    <!--menu for other liquid: water, milk) <3-->
+                    <div class="dropdown-container text-center">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Liquid <img src="/images/liquid.png" width=25px height=25px alt="liquid">
                             </a>
         
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <!--add menu item later for chemistry-->
+                                <a class="dropdown-item" href="/liquid/water.html">Water</a>
+                                <a class="dropdown-item" href="/liquid/milk.html">Milk</a>
                             </div>
                         </div>
                     </div>
-        
-        
-        
-        
-        
+
+                    <!--menu for temperature: degree celcius, fahrenheit <3-->
                     <div class="dropdown-container text-center">
                         <div class="dropdown">
-                            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Geometry
+                            <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Temperature <img src="/images/temperature.png" width=25px height=25px alt="temperature">
                             </a>
-        
+                    
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <!--Maths item-->
-                                <a class="dropdown-item" href="circle.html">Circle</a>
-                                <a class="dropdown-item" href="rectangle.html">Rectangle</a>
+                                <a class="dropdown-item" href="/temperature/temperature.html">Temperature</a>
                             </div>
                         </div>
                     </div>
-        
-                    <div class="dropdown-container text-center">
-                        <div class="dropdown">
-                            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Finance
-                            </a>
-        
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <!--finance item-->
-                            </div>
-                        </div>
-                    </div>
-        
-        
-                    <div class="dropdown-container text-center">
-                        <div class="dropdown">
-                            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Time
-                            </a>
-        
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <!--time calculation-->
-                            </div>
-                        </div>
-                    </div>
-        
-                </div>
-        
-                <div class="text-center">
-        
-        
-                    <div class="row">
-                        <div class="col">
-                            <label>Diameter</label><br>
-                            <input id="di" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Diameter"
-                                onchange="fromDiameterToOther(this.value)" oninput="fromDiameterToOther(this.value)"></div>
-                        <div class="col ">
-                            <label>Circumference</label><br>
-                            <input id="cr" class="form-control text-center  mb-2 mr-sm-2" type="number"
-                                placeholder="Circumference" onchange="fromCircumferenceToOther(this.value)"
-                                oninput="fromCircumferenceToOther(this.value)"><br>
-                        </div>
-                    </div>
-        
-        
-                    <div class="row">
-        
-                        <div class="col">
-                            <label>Area</label><br>
-                            <input id="area" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Area"
-                                onchange="fromAreaToOther(this.value)" oninput="fromAreaToOther(this.value)">
-                        </div>
-        
-                        <div class="col">
-                            <label>Radius</label><br>
-                            <input id="r" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Radius"
-                                onchange="fromRadiusToOther(this.value)" oninput="fromRadiusToOther(this.value)">
-                        </div>
-        
-                    </div>
-        
-        
-                </div>
-                <script src="../../js/geometry/circle.js"></script>
-        
             </div>
         </div>
+
+        <!-- Create a form for people to suggest new unit conversions? new ingredients to convert?
+        1) name
+        2) email
+        3) ingredients/units -->
+
+</body>
+</html>

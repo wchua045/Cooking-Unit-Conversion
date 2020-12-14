@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Unit Converter</title>
+<title>Unit Converter - Circle</title>
 
 <head>
     <link rel="stylesheet" href="../style.css">
@@ -34,16 +34,16 @@
     </p>
     <h3 class="lead about-para text-center font-italic">Our conversion is accurate to the type of ingredients.</h3>
     <br>
-    <h3 class="lead about-para text-center font-weight-bold">- - - Bread Flour - - -</h3>
+    <h3 class="lead about-para text-center font-weight-bold">- - - Temperature - - -</h3>
     <div class="container jumbotron">
         <div class="container-fluid"></div>
         <div class="row">
             <!--menu for flour: bread, all-purpose <3-->
             <div class="dropdown-container text-center">
                 <div class="dropdown">
-                    <a class="btn btn-outline-primary dropdown-toggle dropdwn" href="#" role="button"
-                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Flour
-                        <img src="../images/flour.png" width=25px height=25px alt="flour"></a>
+                    <a class="btn btn-outline-success dropdown-toggle dropdwn" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Flour <img
+                            src="/images/flour.png" width=25px height=25px alt="flour"></a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 
@@ -63,11 +63,11 @@
                 <div class="dropdown">
                     <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sugar <img
-                            src="../images/sugar.png" width=25px height=25px alt="sugar"></a>
+                            src="/images/sugar.png" width=25px height=25px alt="sugar"></a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="../sugar/whitesugar.html">White Granulated Sugar</a>
-                        <a class="dropdown-item" href="../sugar/brownsugar.html">Brown Sugar(Packed)</a>
+                        <a class="dropdown-item" href="/sugar/whitesugar.html">White Granulated Sugar</a>
+                        <a class="dropdown-item" href="/sugar/brownsugar.html">Brown Sugar(Packed)</a>
 
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                 <div class="dropdown">
                     <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Fats <img src="../images/butter.png" width=25px height=25px alt="fats"> </a>
+                        Fats <img src="/images/butter.png" width=25px height=25px alt="fats"> </a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                         <a class="dropdown-item" href="/fats/butter.html">Butter</a>
@@ -87,18 +87,17 @@
                 </div>
             </div>
 
-
             <!--menu for other liquid: water, milk) <3-->
             <div class="dropdown-container text-center">
                 <div class="dropdown">
                     <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Liquid <img src="../images/liquid.png" width=25px height=25px alt="liquid">
+                        Liquid <img src="/images/liquid.png" width=25px height=25px alt="liquid">
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="../liquid/water.html">Water</a>
-                        <a class="dropdown-item" href="../liquid/milk.html">Milk</a>
+                        <a class="dropdown-item" href="/liquid/water.html">Water</a>
+                        <a class="dropdown-item" href="/liquid/milk.html">Milk</a>
                     </div>
                 </div>
             </div>
@@ -106,13 +105,13 @@
             <!--menu for temperature: degree celcius, fahrenheit <3-->
             <div class="dropdown-container text-center">
                 <div class="dropdown">
-                    <a class="btn btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Temperature <img src="../images/temperature.png" width=25px height=25px alt="temperature">
+                        Temperature <img src="/images/temperature.png" width=25px height=25px alt="temperature">
                     </a>
 
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="../temperature/temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="temperature.html">Temperature</a>
                     </div>
                 </div>
             </div>
@@ -128,28 +127,14 @@
 
             <div class="row">
                 <div class="col">
-                    <label for="cup">Cup</label><br>
-                    <input id="cup" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Cup"
-                        onchange="breadFromCupsToOthers(this.value)" oninput="breadFromCupsToOthers(this.value)">
-                </div>
-                <!-- <div class="col ">
-                    <label for="tbspn">Tablespoon</label><br>
-                    <input id="tbspn" class="form-control text-center  mb-2 mr-sm-2" type="number"
-                        placeholder="Tablespoon" onchange="apFromTbspnsToOthers(this.value)"
-                        oninput="apFromTbspnsToOthers(this.value)"><br>
-                </div> -->
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <label for="ounce">Ounce</label><br>
-                    <input id="ounce" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Ounce"
-                        onchange="breadFromOuncesToOthers(this.value)" oninput="breadFromOuncesToOthers(this.value)">
-                </div>
+                    <label for="fahrenheit">Fahrenheit</label><br>
+                    <input id="fahrenheit" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Fahrenheit"
+                        onchange="tempFromFToC(this.value)" oninput="tempFromFToC(this.value)"></div>
                 <div class="col ">
-                    <label for="gram">Gram</label><br>
-                    <input id="gram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Gram"
-                        onchange="breadFromGramsToOthers(this.value)" oninput="breadFromGramsToOthers(this.value)"><br>
+                    <label for="celcius">Celcius</label><br>
+                    <input id="celcius" class="form-control text-center  mb-2 mr-sm-2" type="number"
+                        placeholder="Celcius" onchange="tempFromCToF(this.value)"
+                        oninput="tempFromCToF(this.value)"><br>
                 </div>
             </div>
 
@@ -165,8 +150,7 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-        <script src="/flour/breadflour.js"></script>
+        <script src="/temperature/temperature.js"></script>
 
     </div>
     </div>

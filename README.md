@@ -2,7 +2,7 @@
  This calculator is accurate to the type of ingredients, and units of measurement
 ![](images/CookingUnitConversion.png)
 
-Build for efficiency and to reduce the number of clicks during usage, our Cooking Unit Conversion generates the conversion results instantly as the user keys in their data. 
+Build for efficiency and to reduce the number of clicks during usage, my Cooking Unit Conversion generates the conversion results instantly as the user keys in their data. 
 ![](images/CookingUnitConversionApplication.gif)
 
 

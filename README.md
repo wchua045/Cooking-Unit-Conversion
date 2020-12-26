@@ -1,5 +1,5 @@
 # Cooking Unit Conversion
- Welcome to my first personal project on HTML5, CSS3, and Javascript. 
+ Welcome to my first personal project using HTML5, CSS3, and Javascript. 
  This calculator is accurate to the type of ingredients, and units of measurement
 ![](images/CookingUnitConversion.png)
 
